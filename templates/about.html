@@ -1,0 +1,24 @@
+{% extends '_base.html' %}
+
+{% block content %}
+
+<h1>Plaid API Functions</h1>
+
+<h2>OBJECTIVES</h2>
+
+<h3>Pull and Return/Store User’s Banking Data via Plaid API Requests<h3>
+    <p>The main goals were focusing on right now is creating scripts with
+    functions that takes care of, but not limited to, the following tasks:</p>
+    <ol>
+        <li>Connects to Plaid’s authentication system, Link, and retrieves the
+            user’s account credentials and verify the account holder’s identity
+            to match the user information we collected for the user.</li>
+        <li>Collect the user’s current account balances and also for each of the
+            past 24 months, and store this data.</li>
+        <li>Collect user’s Last-Year Income, Projected Yearly Income for current
+            year, Income Streams, and # of Income Streams.</li>
+        <li>Collect Spending Transactions and break down vs. income, by category.</li>
+        <li>Verify employer information.</li>
+    </ol>
+
+{% endblock content %}
